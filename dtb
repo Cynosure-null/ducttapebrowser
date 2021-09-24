@@ -1,0 +1,5 @@
+#!/bin/bash
+mkdir ~/.dtb
+wget -O ~/.dtb/out.html "$1"
+firejail --net=none lynx ~/.dtb/out.html && rm ~/dtb/out.html
+exit
